@@ -5,6 +5,9 @@ import { curve, heroBackground, robot } from "../assets";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
+import Generating from "./Generating";
+import Notification from "./Notification";
+import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -20,7 +23,7 @@ const Hero = () => {
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
-            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
+            Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{` `}
             <span className="inline-block relative">
               Brainwave{" "}
               <img
@@ -54,6 +57,7 @@ const Hero = () => {
                   alt="AI"
                 />
 
+                <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
                 <ScrollParallax isAbsolutelyPositioned>
                   <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
                     {heroIcons.map((icon, index) => (
@@ -62,6 +66,12 @@ const Hero = () => {
                       </li>
                     ))}
                   </ul>
+                </ScrollParallax>
+                <ScrollParallax isAbsolutelyPositioned>
+                  <Notification
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                    title="Code generation"
+                  />
                 </ScrollParallax>
               </div>
             </div>
@@ -78,6 +88,7 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
+        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
       </div>
       <BottomLine />
     </Section>
