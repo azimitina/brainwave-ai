@@ -297,15 +297,15 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
+    title: "LinkedIn",
     iconUrl: discordBlack,
-    url: "#",
+    url: "https://www.linkedin.com/in/tina-azimi-197b346b/",
   },
   {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://x.com/AzimiTina",
   },
   {
     id: "2",
