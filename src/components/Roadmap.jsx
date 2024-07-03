@@ -2,9 +2,9 @@ import Section from "./Section";
 import Heading from "./Heading";
 import { roadmap } from "../constants";
 import { grid, check2, loading1 } from "../assets";
-import Tagline from "./Tagline";
 import { Gradient } from "./design/Roadmap";
 import Button from "./Button";
+import Tag from "./Tag";
 
 const Roadmap = () => (
   <Section className="overflow-hidden" id="roadmap">
@@ -32,7 +32,7 @@ const Roadmap = () => (
                 </div>
                 <div className="relative z-1">
                   <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
-                    <Tagline>{item.date}</Tagline>
+                    <Tag>{item.date}</Tag>
                     <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">
                       <img
                         className="mr-2.5"
