@@ -2,12 +2,20 @@
 
 Brainwave - A cutting-edge website designed with React.js and Tailwind CSS, showcasing contemporary UI/UX principles. Its elegant design, smooth animations, and exceptional user experience set a benchmark, providing a model or inspiration for future modern applications or websites.
 
+## View the live version of the project hosted on Vercel - [Brainwave AI](https://brainwave-ai-plum.vercel.app/) 🚀
 
 ## Tech Stack
 
 - React.js
 - Vite
 - Tailwind CSS
+
+## Preview 🎥
+
+
+https://github.com/azimitina/brainwave-ai/assets/20149104/794d22f0-03f0-4d53-8154-0b627b73edfe
+
+
 
 
 ## <a name="features">Features</a>
